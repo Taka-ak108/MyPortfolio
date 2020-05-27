@@ -1,3 +1,68 @@
-body {
-  margin: 0;
+.header {
+  background-color: #dbdbdb;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.header-nav__list-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+
+.main-contents {
+  background-color: #999999;
+}
+
+.hero {
+  height: 400px;
+  position: relative;
+  background-color: white;
+}
+
+.hero__catch-phrase {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sections {
+  padding: 10px 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.possible-list__item {
+  display: flex;
+}
+
+.go-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1000;
+}
+.go-top a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.footer {
+  text-align: center;
 }

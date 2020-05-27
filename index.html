@@ -5,53 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyPortfolio</title>
-  <link rel="stylesheet" href="https://taka-ak108.github.io/MyPortfolio/css/style.css">
+  <!-- <link rel="stylesheet" href="https://taka-ak108.github.io/MyPortfolio/css/reset.css"> -->
+  <!-- <link rel="stylesheet" href="https://taka-ak108.github.io/MyPortfolio/css/style.css"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
 
     <!-- container -->
     <div class="container">
-      <div class="header-logo">
-        <img src="" alt="">
+
+      <!-- header-wrapper -->
+      <div class="header-wrapper">
+        <div class="header-logo">
+          My&nbsp;Portofolio
+        </div>
+
+        <!-- header-nav -->
+        <nav class="header-nav">
+
+          <!-- header-nav__list -->
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item">
+              <a href="#about">このサイトについて</a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#profile">プロフィール</a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#possible">できること</a>
+            </li>
+          </ul>
+          <!-- /header-nav__list -->
+
+        </nav>
+        <!-- /header-nav -->
+
       </div>
+      <!-- /header-wrapper -->
 
-      <!-- header-nav -->
-      <nav class="header-nav">
-
-        <!-- header-nav__list -->
-        <ul class="header-nav__list">
-          <li class="header-nav__list">
-            <a href="">このサイトについて</a>
-          </li>
-          <li class="header-nav__list">
-            <a href="">プロフィール</a>
-          </li>
-          <li class="header-nav__list">
-            <a href="">できること</a>
-          </li>
-        </ul>
-        <!-- /header-nav__list -->
-
-      </nav>
-      <!-- /header-nav -->
 
     </div>
     <!-- /container -->
 
   </header>
 
-  <main>
-    
+  <main class="main-contents">
+
+
     <!-- hero -->
     <div class="hero">
-      <h1 class="catch-phrase">
+      <h1 class="hero__catch-phrase">
         <p>好きな</p>
         <p>ものは</p>
-        <p>好き</p>
+        <p>好き。</p>
       </h1>
-      <div>
+      <div class="hero__img">
         <img src="" alt="">
       </div>
     </div>
@@ -61,8 +72,8 @@
     <div class="container">
 
       <!-- このサイトについて -->
-      <section>
-        <h2 class="section-title">このサイトについて</h2>
+      <section class="sections">
+        <h2 class="section-title" id="about">このサイトについて</h2>
 
         <!-- contents -->
         <div class="contents">
@@ -79,8 +90,8 @@
       <!-- /このサイトについて -->
 
       <!-- プロフィール -->
-      <section>
-        <h2 class="section-title">プロフィール</h2>
+      <section class="sections">
+        <h2 class="section-title" id="profile">プロフィール</h2>
 
         <!-- contents -->
         <div class="contents">
@@ -93,13 +104,13 @@
         </div>
         <!-- /contents -->
 
-      </section>
+      </section class="sections">
       <!-- /プロフィール -->
 
       <!-- できること -->
       <section>
-        <h2 class="section-title">できること</h2>
-        
+        <h2 class="section-title" id="possible">できること</h2>
+
         <!-- possible-list -->
         <ul class="possible-list">
           <li class="possible-list__item">
@@ -129,20 +140,21 @@
       <!-- /できること -->
 
       <!-- トップへ戻る -->
-      <div>
-        <a href=""></a>
+      <div class="go-top">
+        <a href="#"></a>
       </div>
       <!-- /トップへ戻る -->
 
-      <footer>
-        <div class="container">
-          <small>&copy;2020&nbsp;niomi</small>
-        </div>
-      </footer>
-    </div>
-    <!-- /container -->
+      <!-- /container -->
 
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy;2020&nbsp;niomi</small>
+    </div>
+  </footer>
+  </div>
 </body>
 
 </html>
